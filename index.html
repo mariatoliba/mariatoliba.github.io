@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="selector">
+      <div id="selector-no" class="no">
+        <div></div>
+      </div>
+      <div id="selector-yes" class="yes">
+        <div></div>
+      </div>
+    </div>
+    <div id="selection" class="yes">
+      <div></div>
+    </div>
+    <script>
+      document.getElementById('selector-no').addEventListener('click', function() {
+        document.getElementById('selection').className = 'no';
+      });
+      document.getElementById('selector-yes').addEventListener('click', function() {
+        document.getElementById('selection').className = 'yes';
+      });
+    </script>
+  </body>
+</html>
